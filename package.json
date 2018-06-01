@@ -4,5 +4,6 @@
   "license": "MIT",
   "scripts": {
     "start": "node ."
-  }
+  },
+  "dependencies": {}
 }
