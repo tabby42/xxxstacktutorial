@@ -12,5 +12,3 @@ import Sessel from './Sessel';
 
 const redChair = new Sessel('red');
 console.log(redChair.info());
-
-
