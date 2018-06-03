@@ -3,7 +3,12 @@
 // If there is none, we default to 8000.
 export const WEB_PORT = process.env.PORT || 8000;
 export const STATIC_PATH = '/static';
-export const APP_NAME = 'Huhu';
+export const APP_NAME = 'Techstack';
 // The isProd is a simple util to test whether we are running in production mode or not.
 // If the "NODE_ENV" is not set to "production" then the code defaults to "development".
 export const isProd = process.env.NODE_ENV === 'production';
+
+export const WDS_PORT = 7000;
+
+export const APP_CONTAINER_CLASS = 'js-app';
+export const APP_CONTAINER_SELECTOR = `.${APP_CONTAINER_CLASS}`;
