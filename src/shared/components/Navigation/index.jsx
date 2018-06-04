@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import {
-  HOME_PAGE_ROUTE,
-  TUTORIALS_PAGE_ROUTE,
-  NOT_FOUND_DEMO_PAGE_ROUTE,
-} from '../../../shared/routes';
+import { HOME_PAGE_ROUTE, TUTORIALS_PAGE_ROUTE, NOT_FOUND_DEMO_PAGE_ROUTE } from '../../routes';
 
 class Navigation extends Component {
   render() {
