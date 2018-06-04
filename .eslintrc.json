@@ -2,10 +2,21 @@
   "extends": "airbnb",
   "plugins": ["compat"],
   "rules": {
-    "compat/compat": 2
+    "compat/compat": 2,
+    "react/prefer-stateless-function": 0,
+      "jsx-a11y/anchor-is-valid": ["error", {
+      "components": ["Link"],
+      "specialLink": ["to"]
+    }]
   },
   "env": {
     "jest": true,
     "browser": true
+  },
+  "settings": {
+    "polyfills": ["fetch"],
+    "import/resolver": {
+      "babel-module": {}
+    }
   }
 }
