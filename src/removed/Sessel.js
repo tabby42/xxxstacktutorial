@@ -1,5 +1,8 @@
+// @flow
+
 class Sessel {
-  constructor(color) {
+  color: string;
+  constructor(color: string) {
     this.color = color;
   }
 

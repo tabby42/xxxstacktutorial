@@ -3,8 +3,8 @@ import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import Helmet from 'react-helmet';
 
-import App from './../shared/app';
-import { APP_CONTAINER_CLASS, STATIC_PATH, WDS_PORT, isProd } from '../shared/config';
+import App from 'shared/app';
+import { APP_CONTAINER_CLASS, STATIC_PATH, WDS_PORT, isProd } from 'shared/config';
 
 function renderApp(location, state, routerContext = {}) {
   // ReactDOMServer.renderToString is where the magic happens.
@@ -23,6 +23,10 @@ function renderApp(location, state, routerContext = {}) {
   //  must come after ReactDOMServer.renderToString().
   const head = Helmet.rewind();
 
+  const stylesheet = isProd
+    ? `<link rel="stylesheet" href="${STATIC_PATH}/css/styles.css">`
+    : '';
+
   const script = isProd
     ? `<script src="${STATIC_PATH}/js/bundle.js"></script>`
     : `<script src="http://localhost:${WDS_PORT}/dist/js/bundle.js"></script>`;
@@ -32,7 +36,7 @@ function renderApp(location, state, routerContext = {}) {
       <head>
         ${head.title}
         ${head.meta}
-        <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
+        ${stylesheet}
       </head>
       <body>
         <div class="${APP_CONTAINER_CLASS}">${appHtml}</div>

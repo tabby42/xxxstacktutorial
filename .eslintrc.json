@@ -1,6 +1,12 @@
 {
-  "extends": "airbnb",
-  "plugins": ["compat"],
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "compat"
+  ],
   "rules": {
     "compat/compat": 2,
     "react/prefer-stateless-function": 0,

@@ -1,9 +1,9 @@
 import 'isomorphic-fetch';
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import Button from '../../components/Button';
+import Button from 'shared/components/Button';
 
-import { firstEndpointRoute } from '../../../shared/routes';
+import { firstEndpointRoute } from 'shared/routes';
 
 class Home extends Component {
   constructor(props) {

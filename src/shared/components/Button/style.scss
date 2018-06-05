@@ -1,0 +1,9 @@
+@import "~shared/styles/variables";
+
+.button {
+  background: $brand-primary;
+  border: none;
+  margin: 20px;
+  padding: 21px 40px;
+  color: #fff;
+}
