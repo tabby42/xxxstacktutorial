@@ -5,10 +5,23 @@ body {
   height: 100%;
   width: 100%;
   margin: 0px;
+  color: #252525;
   padding: 0px;
-  font-family: Verdana;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: $brand-primary;
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.row {
+  display: block;
+}
+
+::placeholder {
+  color: red;
 }

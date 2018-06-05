@@ -1,9 +1,17 @@
 @import "~shared/styles/variables";
 
 .button {
-  background: $brand-primary;
-  border: none;
+  border: 2px solid $brand-primary;
+  background: white;
   margin: 20px;
-  padding: 21px 40px;
-  color: #fff;
+  padding: 13px 25px;
+  color: $brand-primary;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: $brand-primary;
+    color: white;
+    transition: all 300ms ease-in-out;
+  }
 }
